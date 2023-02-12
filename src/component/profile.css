@@ -1,0 +1,65 @@
+:root {
+  --light: #d8c3a5;
+  --white: #eae7dc;
+  --grey: #8e8d8a;
+  --tamato: #e98074;
+  --red: #e85a4f;
+}
+.ProImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profileWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 43%;
+
+  /* align-self: center; */
+}
+.userInfo {
+  display: flex;
+  justify-content: space-around;
+}
+.posts {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.post {
+  padding: 10px;
+}
+button {
+  /* color: inherit; */
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+Link {
+  text-decoration: none;
+}
+.follow {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 8px;
+}
+.unfollow {
+  background-color: var(--grey);
+  color: var(--white);
+  padding: 8px;
+}
+.edit {
+  background-color: var(--grey);
+  color: var(--white);
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+}

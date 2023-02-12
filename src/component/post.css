@@ -1,0 +1,39 @@
+:root {
+  --light: #d8c3a5;
+  --white: #eae7dc;
+  --grey: #8e8d8a;
+  --tamato: #e98074;
+  --red: #e85a4f;
+}
+.center {
+  /* display: flex; */
+  /* flex: 5.5; */
+  height: auto;
+  width: 800px;
+  background-color: var(--light);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.img {
+  width: 99%;
+}
+.contain {
+  display: flex;
+  align-items: center;
+}
+.comment {
+  width: 89%;
+}
+button {
+  /* color: inherit; */
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+Link {
+  text-decoration: none;
+}

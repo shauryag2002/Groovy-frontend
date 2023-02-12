@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+* {
+  font-family: "Signika Negative", sans-serif;
+}
+:root {
+  --light: #d8c3a5;
+  --white: #eae7dc;
+  --grey: #8e8d8a;
+  --tamato: #e98074;
+  --red: #e85a4f;
+}
+button {
+  /* color: inherit; */
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+Link {
+  text-decoration: none;
+  color: #eae7dc;
+}
+a {
+  text-decoration: none;
+  color: var(--red);
+}

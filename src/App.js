@@ -1,24 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./component/allstyle.css";
+import Navbar from "./component/Navbar";
+import Post from "./component/Post";
+import { Routes, Route } from "react-router-dom";
+import Register from "./component/Register";
+import axios from "axios";
+import { useState } from "react";
+import { useEffect } from "react";
+// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Login from "./component/Login";
+import Createpost from "./component/Createpost";
+import TimelinePost from "./component/TimelinePost";
+import Profile from "./component/Profile";
+import Edit from "./component/Edit";
+import Popup from "./component/Popup";
+import PostOne from "./component/PostOne";
 
 function App() {
+  const [user, setUser] = useState("");
+  const login = async () => {
+    // localStorage.getItem("email");
+    // localStorage.getItem("password");
+    // if()
+    const userOne = await axios.post(
+      "https://groovybackend-shauryag2002.vercel.app/auth/login",
+      {
+        email: localStorage.getItem("email"),
+        password: localStorage.getItem("password"),
+      }
+    );
+    setUser(userOne.data);
+  };
+  // const history = useHistory();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!localStorage.getItem("email") || !localStorage.getItem("password")) {
+      // history.push("/login");
+      navigate("/login");
+    } else {
+      login();
+    }
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Navbar /> */}
+      <Routes>
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/post/:id" element={<PostOne />} />
+
+        <Route path="/" element={<TimelinePost />} />
+        <Route path="/addpost" element={<Createpost />} />
+        <Route path="/profile/:username" element={<Profile />} />
+        <Route path="/edit/:id/:userId" element={<Edit />} />
+        {/* <Post /> */}
+      </Routes>
+      {/* <Popup /> */}
+    </>
   );
 }
 
