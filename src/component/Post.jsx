@@ -98,7 +98,7 @@ const Post = () => {
           <div key={pst._id} className="container">
             <div className="center">
               <div className="contain">
-                <a className="containery" id={`userLink${j}`}>
+                <a className="containery Link" id={`userLink${j}`}>
                   <img
                     src={
                       user.profilePicture
@@ -112,6 +112,7 @@ const Post = () => {
                   <button
                     onClick={UsernameHandler(pst.userId, j, user.username)}
                     id={`username${j}`}
+                    className="btn"
                   >
                     {user.username}
                   </button>
@@ -131,7 +132,7 @@ const Post = () => {
               <div className="desc">{pst.desc}</div>
               <hr />
               <div className="contain">
-                <button onClick={() => like2(pst._id)}>
+                <button onClick={() => like2(pst._id)} className="btn">
                   <img
                     id="like"
                     src="https://th.bing.com/th?id=OIP.wDqu7y-LdcrW-Gr5-RaTbQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
@@ -142,7 +143,11 @@ const Post = () => {
                 <div>{pst.likes.length} likes</div>
               </div>
               <br />
-              <button id="comments" onClick={() => commentViewer(j)}>
+              <button
+                id="comments"
+                className="btn"
+                onClick={() => commentViewer(j)}
+              >
                 {pst.comments.length} comments
               </button>
               <div className="commenter">
@@ -157,7 +162,10 @@ const Post = () => {
                       setComment(e.target.value);
                     }}
                   />
-                  <button onClick={() => commentHandler(pst._id)}>
+                  <button
+                    className="btn"
+                    onClick={() => commentHandler(pst._id)}
+                  >
                     Comment
                   </button>
                   {pst.comments.map((comment, i) => {

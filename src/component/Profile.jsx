@@ -162,10 +162,10 @@ const Profile = () => {
             {localStorage.getItem("username") == params.username ? (
               <button>
                 <Link
-                  className="text-link"
+                  className="text-link Link"
                   to={"/edit/" + user._id + "/" + user._id}
                 >
-                  <button className="edit">EDIT</button>
+                  <button className="btn edit">EDIT</button>
                 </Link>
               </button>
             ) : (
@@ -181,7 +181,7 @@ const Profile = () => {
         <div className="userInfo container">
           <div>{postty.length} posts</div>
           <div>
-            <button onClick={togglePopup}>{follower} followers</button>
+            <div onClick={togglePopup}>{follower} followers</div>
             {isOpen && <Popup handleClose={togglePopup} />}
           </div>
           <div onClick={followingPopup}>{following} following</div>

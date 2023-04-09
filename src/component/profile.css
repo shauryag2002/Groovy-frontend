@@ -37,13 +37,13 @@
 .post {
   padding: 10px;
 }
-button {
+.button {
   /* color: inherit; */
   background-color: transparent;
   outline: none;
   border: none;
 }
-Link {
+.Link {
   text-decoration: none;
 }
 .follow {
