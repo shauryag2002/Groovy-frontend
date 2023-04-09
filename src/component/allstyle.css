@@ -9,17 +9,18 @@
   --tamato: #e98074;
   --red: #e85a4f;
 }
-button {
+.btn {
   /* color: inherit; */
   background-color: transparent;
   outline: none;
   border: none;
+  cursor: pointer;
 }
-Link {
+.link {
   text-decoration: none;
   color: #eae7dc;
 }
-a {
+.a {
   text-decoration: none;
   color: var(--red);
 }

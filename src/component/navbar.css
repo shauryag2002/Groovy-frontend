@@ -38,7 +38,7 @@ li {
   border-radius: 50%;
   object-fit: cover;
 }
-input {
+.input {
   margin: 5px;
   padding: 3px;
   width: 100%;
@@ -52,7 +52,7 @@ input:focus {
   justify-content: center;
   align-items: center;
 }
-button {
+.button {
   /* color: inherit; */
   background-color: transparent;
   outline: none;
@@ -66,8 +66,8 @@ button {
   color: inherit;
   text-decoration: inherit;
 }
-.inp {
-  width: 85%;
+.inputt {
+  width: 60%;
 }
 .float {
   position: fixed;

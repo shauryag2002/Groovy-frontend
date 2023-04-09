@@ -1,0 +1,150 @@
+:root {
+  --light: #d8c3a5;
+  --white: #eae7dc;
+  --grey: #8e8d8a;
+  --tamato: #e98074;
+  --red: #e85a4f;
+}
+.sign1up {
+  display: flex;
+  /* background-color: var(--white); */
+  /* justify-content: center;
+  align-items: center; */
+  /* width: fit-content  ; */
+  flex-direction: column;
+  /* height: 1000px; */
+  /* margin-left: 20px; */
+}
+.signup_main {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 46px;
+  color: var(--red);
+  margin-bottom: -7px;
+  width: 231px;
+  height: 100px;
+  margin-left: 20px;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 224px;
+}
+.signup {
+  margin-top: -18px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+.logo1 {
+  margin: 30px 0 30px 40px;
+  color: var(--red);
+}
+.signup_image {
+  object-fit: cover;
+  width: 500px;
+}
+.signup_form_left {
+  width: 500px;
+}
+.username {
+  margin-top: 3px;
+}
+.password {
+  margin-top: 11px;
+}
+.username_text,
+.name_text,
+.password_text,
+.email_text,
+.profile_text,
+.desc_text,
+.city_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 20px;
+  color: var(--red);
+}
+.signup_button {
+  margin-top: 19px;
+  display: flex;
+  margin-left: 20px;
+  background: var(--red);
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 423px;
+  height: 38px;
+}
+.signup_text {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.inp {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  margin-left: 20px;
+  width: 423px;
+  height: 30px;
+  color: #ababab;
+  text-indent: 10px;
+}
+.signup_form_main {
+  margin-top: -45px;
+}
+@media screen and (max-width: 768px) {
+  .signup {
+    margin-left: -20px;
+    overflow-y: hidden;
+  }
+  .signup_image {
+    display: none;
+  }
+  .signup_form_left {
+    width: 80%;
+  }
+  .inp {
+    width: 80%;
+  }
+  .signup_button {
+    width: 80%;
+  }
+  .remember {
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .username {
+    width: 100%;
+  }
+  .password {
+    width: 100%;
+  }
+  .register {
+    font-size: small;
+  }
+  .signup_form_left {
+    width: 471px;
+  }
+}
+@media screen and (max-width: 1243px) {
+  .signup_image {
+    display: none;
+  }
+}
+@media screen and (max-width: 525px) {
+  .signup {
+    width: 300px;
+    margin-left: 2px;
+  }
+}

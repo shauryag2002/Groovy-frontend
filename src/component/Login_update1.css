@@ -1,0 +1,167 @@
+:root {
+  --light: #d8c3a5;
+  --white: #eae7dc;
+  --grey: #8e8d8a;
+  --tamato: #e98074;
+  --red: #e85a4f;
+}
+.login {
+  display: flex;
+  /* background: var(--white); */
+  /* justify-content: center;
+  align-items: center; */
+  /* width: fit-content  ; */
+  flex-direction: column;
+  height: 100vh;
+  /* margin-left: 20px; */
+}
+.signin_main {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 46px;
+  color: var(--red);
+
+  margin-bottom: 48px;
+  width: 144px;
+  height: 100px;
+  margin-left: 20px;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 224px;
+}
+.signin {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.logo1 {
+  margin: 30px 0 30px 40px;
+  color: var(--red);
+}
+.login_image {
+  object-fit: cover;
+  width: 500px;
+}
+.login_form_left {
+  width: 500px;
+  background-color: var(--white);
+}
+.username {
+  margin-top: -51px;
+}
+.password {
+  margin-top: 11px;
+}
+.login_button {
+  margin-top: 44px;
+  display: flex;
+  margin-left: 20px;
+  background: var(--red);
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 423px;
+  height: 57px;
+}
+.login_text {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.inp {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  margin-left: 20px;
+  width: 423px;
+  height: 59px;
+  color: #ababab;
+  text-indent: 10px;
+}
+.username_text,
+.password_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  margin-left: 20px;
+  color: var(--red);
+}
+.remember {
+  margin-left: 20px;
+  width: 453px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.forget {
+  margin-right: 30px;
+}
+.register {
+  width: 271px;
+  height: 24px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #7d7d7d;
+}
+.register_text {
+  color: var(--red);
+}
+@media screen and (max-width: 768px) {
+  .login {
+    margin-left: -20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .login_image {
+    display: none;
+  }
+  .login_form_left {
+    width: 80%;
+  }
+  .inp {
+    width: 80%;
+  }
+  .remember {
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .username {
+    width: 100%;
+  }
+  .password {
+    width: 100%;
+  }
+  .register {
+    font-size: small;
+  }
+  .login_form_left {
+    width: 471px;
+  }
+  .login_button {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1243px) {
+  .login_image {
+    display: none;
+  }
+}
